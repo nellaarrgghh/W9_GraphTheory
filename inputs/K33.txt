@@ -1,0 +1,10 @@
+# Complete Bipartite Graph K3,3 / Utility Graph (Non-Planar)
+U1 V1
+U1 V2
+U1 V3
+U2 V1
+U2 V2
+U2 V3
+U3 V1
+U3 V2
+U3 V3
