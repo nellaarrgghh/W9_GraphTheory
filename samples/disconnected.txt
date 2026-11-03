@@ -1,0 +1,7 @@
+# A triangle, a separate path, and an isolated vertex: planar.
+7 5
+0 1
+1 2
+2 0
+3 4
+4 5
