@@ -110,5 +110,5 @@ Left-Right: NON-PLANAR
 ## AI Usage Disclosure
 
 ### AI Involved:
-1. `https://share.gemini.google/O2yu7Q5xatbT`
+1. https://share.gemini.google/O2yu7Q5xatbT
 2. ...
