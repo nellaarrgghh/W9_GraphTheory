@@ -114,7 +114,12 @@ The Boyer-Myrvold Planarity Algorithm is an advanced linear-time graph theory al
 cd W9_Tegraf
 ```
 
-2. Run the input from /inputs/ through the program:
+2. Get the requirements by running:
+```sh
+pip install -r requirements.txt
+```
+
+3. Run the input from /inputs/ through the program:
 ```sh
 py boyer_myrvold.py inputs/(file_name.txt)
 ```
