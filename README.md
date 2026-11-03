@@ -97,7 +97,7 @@ Left-Right: NON-PLANAR
 ## B. Boyer-Myrvold Planarity Algorithm
 
 ### 1. Short explanation about algorithm
-The Boyer-Myrvold Planarity Algorithm is an advanced linear-time graph theory algorithm **($O(V)$)** developed to test whether an undirected graph is planar or not:
+The Boyer-Myrvold Planarity Algorithm is an advanced linear-time graph theory algorithm  ($\mathcal{O}(V)$) developed to test whether an undirected graph is planar or not:
 - **DFS Tree & Biconnected Decomposition**: The algorithm constructs a Depth-First Search (DFS) tree and analyzes biconnected components (bicomps) vertex by vertex to check for edge intersections.
 - **Nesting Graph Conflict Resolution**: It tracks back-edge nesting graphs and embedding constraints efficiently as vertices are added incrementally.
 - **Kuratowski Obstruction Extraction**: If a graph is non-planar, it instantly isolates and extracts a forbidden Kuratowski subgraph ($K_5$ or $K_{3,3}$ subdivision) as a verification certificate.
