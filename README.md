@@ -108,9 +108,81 @@ The Boyer-Myrvold Planarity Algorithm is an advanced linear-time graph theory al
 - **Dependencies**: `networkx>=3.0`.
 
 ### 3. Instructions to run the code
+1. Move into the repository's root directory:
+
+ ```sh
+cd W9_Tegraf
+```
+
+2. Run the input from /inputs/ through the program:
+```sh
+py boyer_myrvold.py inputs/(file_name.txt)
+```
 
 ### 4. Result of sample run
 
+#### Sample 1: Cycle Graph $C_6$ (`inputs/C6.txt`)
+```text
+$ py boyer_myrvold.py inputs/C6.txt
+============================================================
+ Planarity Checker 
+============================================================
+-> Loading graph from: inputs/C6.txt
+-> Graph Loaded Successfully!
+   Vertices (V): 6
+   Edges (E):    6
+------------------------------------------------------------
+PLANAR
+Result: The graph can be drawn in a plane without edge crossings.
+A valid planar embedding was successfully computed.
+============================================================
+```
+
+#### Sample 2: Complete Graph $K_5$ (`inputs/K5.txt`)
+```text
+$ py boyer_myrvold.py inputs/K5.txt
+============================================================
+ Planarity Checker 
+============================================================
+-> Loading graph from: inputs/K5.txt
+-> Graph Loaded Successfully!
+   Vertices (V): 5
+   Edges (E):    10
+------------------------------------------------------------
+NON-PLANAR
+Result: The graph is non-planar (contains a Kuratowski subgraph obstruction).
+   - Obstruction Nodes: 5
+   - Obstruction Edges: 10
+   - Obstruction Edges List: [('A', 'B'), ('A', 'C'), ('A', 'D'), ('A', 'E'), ('B', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'D'), ('C', 'E'), ('D', 'E')]
+============================================================
+```
+
+#### Sample 3: Complete Bipartite Graph K3,3 (`inputs/K33.txt`)
+```text
+$  py boyer_myrvold.py inputs/K33.txt
+============================================================
+ Planarity Checker 
+============================================================
+-> Loading graph from: inputs/K33.txt
+-> Graph Loaded Successfully!
+   Vertices (V): 6
+   Edges (E):    9
+------------------------------------------------------------
+NON-PLANAR
+Result: The graph is non-planar (contains a Kuratowski subgraph obstruction).
+   - Obstruction Nodes: 6
+   - Obstruction Edges: 9
+   - Obstruction Edges List: [('U1', 'V1'), ('U1', 'V2'), ('U1', 'V3'), ('V1', 'U2'), ('V1', 'U3'), ('V2', 'U2'), ('V2', 'U3'), ('V3', 'U2'), ('V3', 'U3')]
+============================================================
+```
+
+#### Summary of Sample Results:
+| Input File | Vertices ($V$) | Edges ($E$) | Result |
+| :--- | :---: | :---: | :---: |
+| `inputs/C6.txt` | 6 | 6 | **PLANAR** |
+| `inputs/K5.txt` | 5 | 10 | **NON-PLANAR** |
+| `inputs/K33.txt` | 6 | 9 | **NON-PLANAR** |
+| `inputs/petersen.txt` | 10 | 15 | **NON-PLANAR** |
 
 ---
 
@@ -118,4 +190,4 @@ The Boyer-Myrvold Planarity Algorithm is an advanced linear-time graph theory al
 
 ### AI Involved:
 1. https://share.gemini.google/O2yu7Q5xatbT
-2. ...
+2. https://share.gemini.google/ZIdVri2edDVN
